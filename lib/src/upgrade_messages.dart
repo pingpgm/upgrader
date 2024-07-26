@@ -245,7 +245,7 @@ class UpgraderMessages {
         break;
       case 'zh':
         message =
-            '{{appName}}有新的版本！您拥有{{currentInstalledVersion}}的版本可更新到{{currentAppStoreVersion}}的版本。';
+            '{{appName}}有新的版本！您擁有{{currentInstalledVersion}}的版本可更新到{{currentAppStoreVersion}}的版本。';
         break;
       case 'en':
       default:
@@ -362,7 +362,7 @@ class UpgraderMessages {
         message = 'BỎ QUA';
         break;
       case 'zh':
-        message = '不理';
+        message = '忽略';
         break;
       case 'en':
       default:
@@ -481,7 +481,7 @@ class UpgraderMessages {
         message = 'ĐỂ SAU';
         break;
       case 'zh':
-        message = '以后';
+        message = '下次';
       case 'en':
       default:
         message = 'LATER';
@@ -712,7 +712,7 @@ class UpgraderMessages {
         message = 'Bạn có muốn cập nhật ứng dụng?';
         break;
       case 'zh':
-        message = '您现在要更新应用程序吗？';
+        message = '您現在要更新應用程式嗎？';
         break;
       case 'en':
       default:
@@ -907,7 +907,7 @@ class UpgraderMessages {
         message = 'Cập nhật ứng dụng?';
         break;
       case 'zh':
-        message = '更新应用程序？';
+        message = '更新應用程式？';
         break;
       case 'en':
       default:
