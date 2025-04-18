@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021-2023 Larry Aasen. All rights reserved.
+ * Copyright (c) 2021-2024 Larry Aasen. All rights reserved.
  */
 
 import "package:os_detect/os_detect.dart" as platform;
@@ -139,6 +139,19 @@ class UpgraderOS {
     } catch (e) {
       return false;
     }
+  }
+
+  /// Get the current OS type formatted, such as 'Android', 'iOS', etc.
+  String get currentTypeFormatted {
+    return switch (currentOSType) {
+      UpgraderOSType.android => 'Android',
+      UpgraderOSType.fuchsia => 'Fuchsia',
+      UpgraderOSType.ios => 'iOS',
+      UpgraderOSType.linux => 'Linux',
+      UpgraderOSType.macos => 'macOS',
+      UpgraderOSType.web => 'Web',
+      UpgraderOSType.windows => 'Windows',
+    };
   }
 
   @override

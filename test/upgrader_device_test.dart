@@ -139,9 +139,11 @@ Map _iosInfo({required String baseOS}) {
   final info = {
     'name': 'name',
     'model': 'model',
+    'modelName': 'modelName',
     'utsname': iosUtsnameMap,
     'systemName': 'systemName',
     'isPhysicalDevice': false,
+    'isiOSAppOnMac': false,
     'systemVersion': baseOS,
     'localizedModel': 'localizedModel',
     'identifierForVendor': 'identifierForVendor',
@@ -171,6 +173,7 @@ Map _macOSInfo({required String baseOS}) {
     'hostName': 'a',
     'arch': 'a',
     'model': 'a',
+    'modelName': 'a',
     'kernelVersion': 'a',
     'osRelease':
         'Version $baseOS (Build 22D68)', // This is the only value used in the test.
